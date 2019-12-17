@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -80,6 +80,7 @@
            "description": "Payment",
            "image": "https://timesofindia.indiatimes.com/thumb/msid-69902898,imgsize-115506,width-800,height-600,resizemode-4/69902898.jpg",
            "handler": function (response){
+                console.log(response)
                  $.ajax({
                    url: '{{ url("/paysuccess") }}',
                    type: 'post',
